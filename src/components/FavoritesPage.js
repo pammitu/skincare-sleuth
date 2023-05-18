@@ -2,6 +2,7 @@ import React from "react";
 import IngredientsPage from "./IngredientsPage";
 
 function FavoritesPage() {
+
     return (
         <div>
             <h1>Favorite Page</h1>
@@ -10,4 +11,15 @@ function FavoritesPage() {
     );
 }
 
-export default IngredientsPage;
+
+const [favorites, setFavorites] = useState([]);
+
+const addToFavorites = ingredient => {
+    setFavorites([...favorites, ingredient]);
+}
+
+favorites.map(favorite => (
+    <p>{favorite.name}</p>
+))
+
+export default FavoritesPage;

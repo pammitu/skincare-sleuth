@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const BASE_URL = 'https://world.openfoodfacts.org/data';
+
 //fetch data for certain product
 export const getProductData = async (productID) => {
     try {
