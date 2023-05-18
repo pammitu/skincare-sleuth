@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import {  Link } from 'react-router-dom'
 import { getProductsData } from "../services/apiService";
 
 
 const IngredientsPage = () => {
     const [products, setProducts] = useState([]);
-    const [search, getSearch] = useState('');
+    const [search, setSearch] = useState('');
 
     const fetchData = async () => {
         const data = await getProductsData(search);
@@ -19,7 +20,7 @@ const IngredientsPage = () => {
 
     return (
         <div>
-            <h1>Ingreient Page</h1>
+            <h1>Ingredients Page</h1>
             <p>This is the ingredient page </p>
             <input
                 type="text"
@@ -31,6 +32,7 @@ const IngredientsPage = () => {
                 <div key={product.id}>
                     <h2>{product.product_name}</h2>
                     <p>{product.ingredients_text}</p>
+                    <Link to={`/product/${product.id}`}>View Details</Link>
                     </div>
             ))}
         </div>
