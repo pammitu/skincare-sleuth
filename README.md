@@ -50,11 +50,17 @@ You can also view the project's planning board on [Trello.](https://trello.com/b
 
 ## IceBox Items
 <hr style="border: 1px solid lavender"> 
--Add oAuth so users can save their favorites and their routines
-- As a user I want to be able to search up my skincare concerns and look at suggested ingredients to improve my skin texture.
-- As a user, I want to be able to take a skincare quiz so I can put in my age, lifestyle, concerns so a skincare routine is suggested for me.
-- As a user I want to be able to post my skincare questions for other users to talk about their favorite products/routines
--implement full CRUD on every component
+
+* Add oAuth so users can save their favorites and their routines
+
+* As a user I want to be able to search up my skincare concerns and look at suggested ingredients to improve my skin texture.
+
+* As a user, I want to be able to take a skincare quiz so I can put in my age, lifestyle, concerns so a skincare routine is suggested for me.
+
+* As a user I want to be able to post my skincare questions for other users to talk about their favorite products/routines
+
+* implement full CRUD on every component
+
 
 ## Choosing an API
 <hr style="border: 1px solid lavender"> 
