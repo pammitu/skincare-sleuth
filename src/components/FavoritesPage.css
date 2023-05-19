@@ -9,3 +9,36 @@
     list-style: disc;
     padding-left: 40px;
 }
+
+.favorites-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.favorites-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid plum;
+}
+
+.favorites-item p {
+    flex-basis: 45%;
+    margin: 0;
+    padding-left: 10px;
+    border-bottom: 1px solid violet;
+    text-transform: capitalize;
+}
+
+.favorites-item textarea {
+    flex-basis: 50%;
+    padding-left: 10px;
+    resize: vertical;
+}
+
+h3{
+    padding: 20px;
+    background-color: #aab4e8
+}
+

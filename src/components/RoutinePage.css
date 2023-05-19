@@ -46,3 +46,7 @@
     text-transform: capitalize;
 }
 
+textarea {
+    width: 90%;
+    height: 125px;
+}

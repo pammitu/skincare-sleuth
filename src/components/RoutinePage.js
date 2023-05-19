@@ -35,8 +35,8 @@ return (
                         {Object.keys(routine[day]).map((time) => (
                             <div key={time} className="grid-cell">
                                 <label>{time}</label>
-                                <input
-                                type="text"
+                                <textarea
+                                rows="4"
                                 value={routine[day][time]}
                                 onChange={(e) => updateRoutine(day, time, e.target.value)}
                                 />
