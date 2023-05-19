@@ -5,23 +5,31 @@ import './ProductDetailsPage.css';
 
 const ProductDetailsPage = ({ addToFavorites }) => {
     const [product, setProduct] = useState({});
+    const [error, setError] = useState(null);
     const { id } = useParams();
    
 
     useEffect(() => {
         const fetchData = async () => {
+            try {
             const data = await getProductData(id);
             console.log('Fetched Data:');
             if (data && data.product) {
             setProduct(data.product);
         } else {
-            console.error('Product not found');
+            setError('Product not found');
         }
-    };
+    } catch (err) {
+        setError(err.message);
+    }
+};
         fetchData();
     }, [id]);
+
+    if (error) {
+        return <div>Error: {error}</div>
+    }
     
-console.log('Product:', product);
     return (
         <div className="product-details">
             <h2 className="product-name">{product.product_name}</h2>

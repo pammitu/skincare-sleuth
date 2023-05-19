@@ -6,6 +6,7 @@ import './IngredientsPage.css';
 const IngredientsPage = () => {
     const [products, setProducts] = useState([]);
     const [search, setSearch] = useState('');
+    const [error, setError] = useState(null);
 
 const fetchData = async () => {
     try {
@@ -17,8 +18,8 @@ const fetchData = async () => {
         } else {
             console.log('No Products Found', data);
         } 
-    }catch (error) {
-            console.error('Error fetching products', error);
+    }catch (err) {
+            setError(err.message);
         }
 
 }
