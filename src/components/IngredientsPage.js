@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {  Link } from 'react-router-dom'
 import { getProductsData } from "../services/apiService";
-
+import './IngredientsPage.css';
 
 const IngredientsPage = () => {
     const [products, setProducts] = useState([]);

@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getProductData } from "../services/apiService";
+import './ProductDetailsPage.css';
 
 const ProductDetailsPage = ({ addToFavorites }) => {
     const [product, setProduct] = useState({});

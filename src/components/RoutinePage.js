@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './RoutinePage.css';
 
 function RoutinePage() {
     const initialRoutine = {
