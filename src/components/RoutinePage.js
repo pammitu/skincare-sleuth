@@ -12,51 +12,41 @@ function RoutinePage() {
         Sunday: {morning: "", evening: ""},
     };
 //loading routine from local sstorage on component mout or use inital routine if not in local storsge
-    const [routine, setRoutine] = useState(
-        () => JSON.parse(localStorage.getItem("routine")) || initialRoutine
-    );
+const [routine, setRoutine] = useState(
+    () => JSON.parse(localStorage.getItem("routine")) || initialRoutine
+);
 
-    useEffect(() => {
-        localStorage.setItem("routine", JSON.stringify(routine));
-    }, [routine]);
+useEffect(() => {
+    localStorage.setItem("routine", JSON.stringify(routine));
+}, [routine]);
 
 
 const updateRoutine = (day, time, item) => {
     setRoutine({ ...routine, [day]: {...routine[day], [time]:item} });
 };
 
-        return (
-        <div>
-            <h1>Build your Routine</h1>
-            <p>Everyone's skin is different and so is there schedule, build a schedule with your favorite ingreients/products below!</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Morning</th>
-                        <th>Evening</th>
-                    </tr>
-                </thead>
-            <tbody>
-        {Object.keys(routine).map((day) => (
-            <tr key={day}>
-                <td>{day}</td>
-                    {Object.keys(routine[day]).map((time) => (
-                        <td key={time}>
-                            <input 
-                        type="text"
-                        value={routine[day][time]}
-                        onChange={(e) => updateRoutine(day, time, e.target.value)}
-                        />
-                    </td>
-                ))}
-            </tr>
-        ))}
-        </tbody>
-        </table>
-    </div>
-    );
-}
+return (
+    <div>
+        <h2>Build your Routine</h2>
+            <div className="routine-grid">
+                {Object.keys(routine).map((day) => (
+                    <div className="grid-column" key={day}>
+                        <div className="grid-header">{day}</div>
+                        {Object.keys(routine[day]).map((time) => (
+                            <div key={time} className="grid-cell">
+                                <label>{time}</label>
+                                <input
+                                type="text"
+                                value={routine[day][time]}
+                                onChange={(e) => updateRoutine(day, time, e.target.value)}
+                                />
+                            </div>
+                            ))}
+                        </div>
+                     ))}
+                </div>
+            </div>
+        );
+    }
 
 export default RoutinePage;

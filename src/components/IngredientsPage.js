@@ -31,7 +31,7 @@ const fetchData = async () => {
     return (
         <div>
             <h1>Ingredients Page</h1>
-            <p>This is the ingredient page </p>
+            <p>Find Your Product Ingredients </p>
             <form onSubmit={handleSubmit}>
             <input
                 type="text"

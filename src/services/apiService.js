@@ -15,7 +15,7 @@ export const getProductData = async (productId) => {
 
 export const getProductsData = async (searchQuery) => {
     try {
-        const response = await axios.get(`${BASE_URL}/cgi/search.pl?search_terms=${searchQuery}&search_simple=1&action=process&json=1`);
+        const response = await axios.get(`${BASE_URL}cgi/search.pl?search_terms=${searchQuery}&search_simple=1&action=process&json=1`);
         return response.data;
     } catch (error) {
         console.error(`Error: ${error}`); 

@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    text-align: center;
+}
+
+.block-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%
+}
+
+.navigation-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #9492f8;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 20px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
