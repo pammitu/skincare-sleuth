@@ -5,11 +5,12 @@ function FavoritesPage({ favorites }) {
 
     return (
         <div>
-            <h1>Favorite Page</h1>
-            <p>List your favorite items here!</p>
+            <h2 id="favorites-title">Favorites Page</h2>
+            <ul className="favorites-list">
             {favorites.map((favorite, index) => (
-                <p key={index}>{favorite.product_name}</p>
+                <li key={index}>{favorite.product_name}</li>
             ))}
+            </ul>
         </div>
     );
 }

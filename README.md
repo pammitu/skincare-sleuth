@@ -91,20 +91,14 @@ This was my ideal color palette and font choices, I really like light purple as 
 * HTML
 * CSS
 
-## Contributions
-
-### Nia Salgado
-* Backend Development and Front-End Development
-
-### Pamela Stankova
-* Backend Development and Front-End Development
-
 ## Acknowlegements
 * Instructional Team at Adobe Digital Academy
 * Stack Overflow.
 * https://www.w3schools.com/
 
+## Resources
 
+- I created my searchbox with the help of these articles [Link 1](https://medium.com/@rushipandya3315/how-to-create-dynamic-width-search-box-using-flexbox-b6b91b9f2860) and [Link 2](https://www.w3schools.com/howto/howto_css_search_button.asp)
 
 # Getting Started with Create React App
 

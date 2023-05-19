@@ -30,22 +30,25 @@ const fetchData = async () => {
 
     return (
         <div>
-            <h1>Ingredients Page</h1>
-            <p>Find Your Product Ingredients </p>
-            <form onSubmit={handleSubmit}>
-            <input
+            <h2 id="search-title">Search for Product Ingredients </h2>
+            <div className="search-container">
+                <div className="search-box">
+                 <form onSubmit={handleSubmit}>
+                 <input
                 type="text"
                 placeholder="search.."
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-            />
-            <button type="submit">Search</button>
-            </form>
+                /> 
+                  <button type="submit" className="fas fa-search">Search</button>
+                  </form>
+                </div>
+            </div>
             {products.map((product, index) => (
                 <div key={product.id || index}> 
-                    <h2>{product.product_name}</h2> 
-                    <p>{product.ingredients_text} || 'No Ingredients'</p> 
-                    <Link to={`/product/${product.id || '0'}`}>View Details</Link> 
+                    <h3>{product.product_name}</h3> 
+                    <p className="product-text">{product.ingredients_text} || 'No Ingredients'</p> 
+                    <Link to={`/product/${product.id || '0'}`} className="view-button">View Details</Link> 
                     </div>
             ))}
         </div>

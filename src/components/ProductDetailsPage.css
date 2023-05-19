@@ -1,0 +1,24 @@
+.view-button {
+    background-color: #a694bc;
+    height: 30px;
+    border: none; 
+    cursor: pointer;
+    outline: none;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: .5px solid black;
+    color: #fff
+}
+
+.product-name {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    background-color: #aab4e8
+}
+
+#ingredient-list {
+    padding-left: 10px;
+}

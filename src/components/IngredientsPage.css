@@ -1,0 +1,77 @@
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: .5px solid black;
+}
+
+
+.search-box input {
+    flex-grow: 1;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+.search-box button {
+    background-color: #a694bc;
+    height: 30px;
+    border: none; 
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    
+}
+
+h3 {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    background-color: #c9cde2;
+}
+
+#search-title {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    background-color: #aab4e8;
+}
+
+.view-button {
+    background-color: #a694bc;
+    height: 30px;
+    border: none; 
+    cursor: pointer;
+    outline: none;
+    padding: 10px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: .5px solid black;
+    color: #fff
+}
+
+.product-text {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border: none;
+    padding: 10px 10px;
+
+}

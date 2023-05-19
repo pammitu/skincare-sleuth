@@ -11,6 +11,7 @@ const ProductDetailsPage = ({ addToFavorites }) => {
     useEffect(() => {
         const fetchData = async () => {
             const data = await getProductData(id);
+            console.log('Fetched Data:');
             if (data && data.product) {
             setProduct(data.product);
         } else {
@@ -22,10 +23,10 @@ const ProductDetailsPage = ({ addToFavorites }) => {
     
 console.log('Product:', product);
     return (
-        <div>
-            <h1>{product.product_name}</h1>
-            <p>{product.ingredients_text}</p>
-            <button onClick={() => addToFavorites(product)}> Add to Favorites</button>
+        <div className="product-details">
+            <h2 className="product-name">{product.product_name}</h2>
+            <p id="ingredient-list">{product.ingredients_text}</p>
+            <button className="view-button" onClick={() => addToFavorites(product)}> Add to Favorites</button>
         </div>
     );
 };
