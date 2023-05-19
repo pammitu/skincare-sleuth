@@ -25,11 +25,15 @@ Skincare is a journey for many which requires a lot of trial and error, there ar
 ### Example Site Pictures:
 <hr style="border: 1px solid #ccc">
 
-![Books Index](./public/images/booksIndex.png)
+![Deployed Homepage](./public/images/finalhomepage.png)
 
-![Book Show](./public/images/bookShowPage.png)
+![Deployed Search](./public/images/finalsearch.png)
 
-![New Submission](./public/images/newSubmissionPage.png)
+![Deployed InfoPage](./public/images/finalinfo.png)
+
+![Deployed Routine](./public/images/finalroutine.png)
+
+![Deployed Favorites](./public/images/finalfavs.png)
 
 ## Getting Started
 

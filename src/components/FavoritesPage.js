@@ -6,7 +6,7 @@ function FavoritesPage({ favorites }) {
 
     const handleNoteChange = (index, newNote) => {
         const newNotes = [...notes];
-        newNotes[index] = newNotes;
+        newNotes[index] = newNote;
         setNotes(newNotes);
     };
 
