@@ -1,6 +1,6 @@
-# Book Club
+# Skincare Slueth
 
-<hr style="border: 3px solid black">
+<hr style="border: 3px solid lilac">
 
 ### Table of Contents
 
@@ -16,42 +16,11 @@
 
 ---
 ## About the Project
-<hr style="border: 1px solid #ccc">
+<hr style="border: 1px solid lilac">
 
-Book Club is a full-stack web application which allows users to browse, and review books. Each user has the ability to read, create and delete both book reviews and notable quotes from the book of their choice. Book Club was designed so that readers can have a community where they can log and keep track of the books they read while also interacting with other user's to share or discuss differing opinion.
+“Skincare Sleuth” is a react application made for skincare junkies who love to read up on skincare ingredients so they can make better informed decisions on their purchases. This application will allow users to curate a personalized skincare routine by adding products to their routine, search up the ingredients of their favorite products and also save them to a list for later reference.
 
-## Getting Started
-
-To checkout the app, simly visit the [deployed website.](https://immense-river-09934.herokuapp.com/books)
-
-You can also view the project's planning board on [Trello.](https://trello.com/invite/b/J2F5D3H0/ATTI65091d5a24ee8b844a650b56ad6602136DA3A27F/project-2)
-
-## MVP Goals 
-<hr style="border: 1px solid #ccc"> 
-
-- 1.Build a fully functional full-stack web application.
-- 2.Have full CRUD functionality.
-- 3.Style a simple homepage displaying the current catalogue  of books.
-- 4.Create paths for users to be able to find more information about a book by clicking the cover image of the title they want to explore.
-- 5.Allow users to add their own review for a book.
-- 6.Allow users to delete their own review for a book.
-- 7.Allow users to edit their book reviews.
-- 8.Allow users to add a new book to the catalogue.
-- 9.Deploy successfully on Heroku
-
-## Wireframe:
-<hr style="border: 1px solid #ccc">
-
-The images below show how we designed our application, we had some trouble trying to choose an optimal style for users but we decided to go with the most user friendly and simple set-up. 
-
-![Wireframe](./public/images/project1wireframe.png)
-
-
-![ERD](./public/images/project2ERD.png)
-
-![Trello Board](./public/images/Trello%20Board.png)
-
-A user will be able to start on the home page with the index of current books on the website. From there they can choose a book they are interested in learning about or a book that they have already read. Once they click on the book cover they are interested in they will be redirected to another page where they can see the  Title, Author, and Summary of the book. There may be some reviews and notable quotes already on the page if the book has been there for a while and they can choose to add, edit or delete the reviews and notable quotes.
+Skincare is a journey for many which requires a lot of trial and error, there are a number of ingredients which can do wonders for our skin or the complete opposite, it's easy to get overwhelmed with choosing the right products for your skintype let alone creating a skincare routine for yourself. This application's purpose is for you to feel empowered about the purchases you make amidst all of the misinformation on the internet. Hence the name "Skincare Slueth", where "sleuth" means to investigate and discover, just like you on your skincare adventure!!!
 
 ### Example Site Pictures:
 <hr style="border: 1px solid #ccc">
@@ -61,6 +30,55 @@ A user will be able to start on the home page with the index of current books on
 ![Book Show](./public/images/bookShowPage.png)
 
 ![New Submission](./public/images/newSubmissionPage.png)
+
+## Getting Started
+
+To checkout my application, simly visit the [deployed website.](https://immense-river-09934.herokuapp.com/books)
+
+You can also view the project's planning board on [Trello.](https://trello.com/b/8Eex7f8a/p3-skincare)
+
+## MVP User Stories  
+<hr style="border: 1px solid lavender"> 
+
+- As a user, I want to browse different skincare ingredients so I can read what each one is suggested for.
+- As a user I want to add my skincare products to my own routine that works for my skincare concerns and lifestyle.
+- As a user i want to add skincare products to my favorites so I can try them out after I use up the products I currently have.
+
+## IceBox Items
+<hr style="border: 1px solid lavender"> 
+
+- As a user I want to be able to search up my skincare concerns and look at suggested ingredients to improve my skin texture.
+- As a user, I want to be able to take a skincare quiz so I can put in my age, lifestyle, concerns so a skincare routine is suggested for me.
+- As a user I want to be able to post my skincare questions for other users to talk about their favorite products/routines
+
+## Choosing an API
+<hr style="border: 1px solid lavender"> 
+
+- I went with Open Beauty Facts API, this is a huge list encompassing not only popular skincare products but food items as well, this was the easiest to access (meaning free) and the one that closely aligned with the goals of my project. Unfortunately, it has not been updated in over 2 years and there are some discrepencies with the information.
+- I was considering EWG Skin Deep API, the issue with this one is that it is heavily biased against skincare that doesn't have "natural" ingredients meaning it demonizes skincare ingredients which get a bad rep but are commonly used to stablize ingredients for example.
+-I applied for Sephora API but I got denied because I don't have valid credentials as I up a mere bootcamp student at this time....
+
+## Wireframe and Planning:
+<hr style="border: 1px solid #ccc">
+
+This was my ideal color palette and font choices, I really like light purple as a base for this application. I also aimed to find simple easy to read fonts for this project
+
+![Component Hierarchy](./public/images/component.png)
+
+![Styling](./public/images/styling.png)
+
+![Old homepage](./public/images/oldhomepage.png)
+
+![final homepage](./public/images/homepage.png)
+
+![Favorites](./public/images/favorites.png)
+
+![Igredient Infro](./public/images/ingredientinfo.png)
+
+![Routine](./public/images/routine.png)
+
+
+
 
 ## Technologies Used
 <hr style="border: 1px solid #ccc">
@@ -72,14 +90,6 @@ A user will be able to start on the home page with the index of current books on
 * Heroku
 * HTML
 * CSS
-
-## Next Steps
-<hr style="border: 1px solid #ccc">
-
-*Add user authentication so user's can save their added books
-*Implement search functionality with additional filters
-*Integrate an external book review API for more comprehensive book data
-*Allow memebers to thumbs up/down reviews and quotes
 
 ## Contributions
 
