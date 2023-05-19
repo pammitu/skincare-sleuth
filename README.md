@@ -37,7 +37,7 @@ Skincare is a journey for many which requires a lot of trial and error, there ar
 
 ## Getting Started
 
-To checkout my application, simly visit the [deployed website.](https://immense-river-09934.herokuapp.com/books)
+To checkout Skincare Slueth click [here.](https://main--lucent-faloodeh-c71fcd.netlify.app/)
 
 You can also view the project's planning board on [Trello.](https://trello.com/b/8Eex7f8a/p3-skincare)
 
@@ -102,7 +102,9 @@ This was my ideal color palette and font choices, I really like light purple as 
 * https://www.w3schools.com/
 
 ## Contributing
-- I would love to see what ideas and suggestions you have for this application, this is a huge work in progress and any help I can get on my icebox items would be a huge help.
+
+I would love to see what ideas and suggestions you have for this application, this is a huge work in progress and any help I can get on my icebox items would be a huge help.
+
 - Fork the project.
 - Install
 - Create a feature branch (git checkout -b "")
